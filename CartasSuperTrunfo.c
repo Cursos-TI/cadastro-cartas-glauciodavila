@@ -75,26 +75,28 @@ int main() {
   scanf("%s", &cidade11);
   printf("Informe a populacao da carta 1 / estado A: \n");
   scanf("%f", &populacao11);
-  printf("Informe a area da carta 1 / estado A: \n");
+  printf("Informe a area, em Km2, da carta 1 / estado A: \n");
   scanf("%f", &area11);
-  printf("Informe o pib da carta 1 / estado A: \n");
+  printf("Informe o pib, em R$, da carta 1 / estado A: \n");
   scanf("%f", &pib11);
   printf("Informe a quantidade de pontos turísticos da carta 1 / estado A: \n");
-  scanf("%f", &pontos11);
+  scanf("%d", &pontos11);
   densidade11 = populacao11/area11;
   ppc11 = pib11/populacao11;
 
   // Área para exibição dos dados da cidade
 
-  printf("Os dados da carta A01 são: \n");
-  printf("Estado: \n", estado1);
-  printf("Cidade: \n", cidade11);
-  printf("Populacao: \n", populacao11);
-  printf("Area: \n", area11);
-  printf("PIB: \n", pib11);
-  printf("Numero de Pontos Turisticos: \n", pontos11);
-  printf("Densidade populacional: \n", densidade11);
-  printf("PIB per capita: \n", ppc11);
+  printf("################################## \n");
+  printf("### Os dados da carta A01 são: ### \n");
+  printf("################################## \n");
+  printf("Estado: %s \n", estado1);
+  printf("Cidade: %s \n", cidade11);
+  printf("Populacao: %f \n", populacao11);
+  printf("Area: %f \n", area11);
+  printf("PIB: %f \n", pib11);
+  printf("Numero de Pontos Turisticos: %d \n", pontos11);
+  printf("Densidade populacional: %f \n", densidade11);
+  printf("PIB per capita: %f \n", ppc11);
 
 return 0;
 } 
