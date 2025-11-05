@@ -69,18 +69,18 @@ int main() {
 
   // Área para entrada de dados
 
-  printf("Informe a unidade da federacao A: ");
-  scanf("%s \n", &estado1);
-  printf("Informe a cidade da carta 1 / estado A: ");
-  scanf("%s \n", &cidade11);
-  printf("Informe a populacao da carta 1 / estado A:");
-  scanf("%f \n", &populacao11);
-  printf("Informe a area da carta 1 / estado A:");
-  scanf("%f \n", &area11);
-  printf("Informe o pib da carta 1 / estado A:");
-  scanf("%f \n", &pib11);
-  printf("Informe a quantidade de pontos turísticos da carta 1 / estado A:");
-  scanf("%f \n", &pontos11);
+  printf("Informe a unidade da federacao A: \n");
+  scanf("%s", &estado1);
+  printf("Informe a cidade da carta 1 / estado A: \n");
+  scanf("%s", &cidade11);
+  printf("Informe a populacao da carta 1 / estado A: \n");
+  scanf("%f", &populacao11);
+  printf("Informe a area da carta 1 / estado A: \n");
+  scanf("%f", &area11);
+  printf("Informe o pib da carta 1 / estado A: \n");
+  scanf("%f", &pib11);
+  printf("Informe a quantidade de pontos turísticos da carta 1 / estado A: \n");
+  scanf("%f", &pontos11);
   densidade11 = populacao11/area11;
   ppc11 = pib11/populacao11;
 
