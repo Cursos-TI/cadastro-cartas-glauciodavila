@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-
-
-// Desafio Super Trunfo - Países
+// Desafio Super Trunfo - Estados/Cidades
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
@@ -66,6 +64,9 @@ int main() {
   float ppc61,ppc62,ppc63,ppc64;
   float ppc71,ppc72,ppc73,ppc74;
   float ppc81,ppc82,ppc83,ppc84;
+
+  char tecla;
+  int segue;
   
   
   // Área para entrada de dados
@@ -100,6 +101,40 @@ int main() {
   printf("PIB per capita em R$: %f \n\n\n", ppc11);
 
   
+  printf("Tecle algo e pressione ENTER para continuar...");
+  scanf("%s", &tecla);
+  system("clear"); 
+  
+
+  printf("Informe a cidade da carta 2 / estado A: \n");
+  scanf("%s", &cidade12);
+  printf("Informe a populacao da carta 2 / estado A: \n");
+  scanf("%f", &populacao12);
+  printf("Informe a area, em Km2, da carta 2 / estado A: \n");
+  scanf("%f", &area12);
+  printf("Informe o pib, em R$, da carta 2 / estado A: \n");
+  scanf("%f", &pib12);
+  printf("Informe a quantidade de pontos turísticos da carta 2 / estado A: \n");
+  scanf("%d", &pontos12);
+  densidade12 = populacao12/area12;
+  ppc12 = pib12/populacao12;
+
+
+  printf("################################## \n");
+  printf("### Os dados da carta A02 são: ### \n");
+  printf("################################## \n");
+  printf("Estado: %s \n", estado1);
+  printf("Cidade: %s \n", cidade12);
+  printf("Populacao: %f \n", populacao12);
+  printf("Area: %f \n", area12);
+  printf("PIB em R$: %f \n", pib12);
+  printf("Numero de Pontos Turisticos: %d \n", pontos12);
+  printf("Densidade populacional: %f \n", densidade12);
+  printf("PIB per capita em R$: %f \n\n\n", ppc12);
+
+  printf("Tecle algo e pressione ENTER para continuar...");
+  scanf("%s", &tecla);
+  system("clear"); 
 
 return 0;
 } 
