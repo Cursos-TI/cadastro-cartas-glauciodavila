@@ -11,10 +11,9 @@ int main() {
   char cidade11[30],cidade21[30],tecla;
   float populacao11,populacao21;
   int pontos11,pontos21,segue;
-  float area11,area21,pib11,pib21,densidade11,densidade21,ppc11,ppc21;
-
+  float area11,area21,pib11,pib21;
   
-  // Área para entrada de dados
+  // Recebendo informações da carta 1
 
   printf("Informe a unidade da federacao A: \n");
   scanf("%s", &estado1);
@@ -28,10 +27,10 @@ int main() {
   scanf("%f", &pib11);
   printf("Informe a quantidade de pontos turísticos da carta 1 / estado A: \n");
   scanf("%d", &pontos11);
-  densidade11 = populacao11/area11;
-  ppc11 = pib11/populacao11;
 
   printf("   \n\n\n");
+
+  // Recebendo informações da carta 2
 
   printf("Informe a unidade da federacao B: \n");
   scanf("%s", &estado2);
@@ -45,13 +44,13 @@ int main() {
   scanf("%f", &pib21);
   printf("Informe a quantidade de pontos turísticos da carta 2 / estado B: \n");
   scanf("%d", &pontos21);
-  densidade21 = populacao21/area21;
-  ppc21 = pib21/populacao21;
 
 
   // Área para exibição dos dados da cidade
 
   printf("   \n\n\n");
+
+  // Mostrando informações da carta 1
 
   printf("################################## \n");
   printf("### Os dados da carta A01 são: ### \n");
@@ -62,10 +61,10 @@ int main() {
   printf("Area: %f \n", area11);
   printf("PIB em R$: %f \n", pib11);
   printf("Numero de Pontos Turisticos: %d \n", pontos11);
-  printf("Densidade populacional: %f \n", densidade11);
-  printf("PIB per capita em R$: %f \n\n\n", ppc11);
 
   printf("   \n\n\n");
+
+  // Mostrando informações da carta 2
 
   printf("################################## \n");
   printf("### Os dados da carta B02 são: ### \n");
@@ -76,8 +75,6 @@ int main() {
   printf("Area: %f \n", area21);
   printf("PIB em R$: %f \n", pib21);
   printf("Numero de Pontos Turisticos: %d \n", pontos21);
-  printf("Densidade populacional: %f \n", densidade21);
-  printf("PIB per capita em R$: %f \n\n\n", ppc21);
 
 return 0;
 } 
