@@ -31,26 +31,10 @@ int main() {
   densidade11 = populacao11/area11;
   ppc11 = pib11/populacao11;
 
-  // Área para exibição dos dados da cidade
+  printf("   \n\n\n");
 
-  printf("################################## \n");
-  printf("### Os dados da carta A01 são: ### \n");
-  printf("################################## \n");
-  printf("Estado: %s \n", estado1);
-  printf("Cidade: %s \n", cidade11);
-  printf("Populacao: %f \n", populacao11);
-  printf("Area: %f \n", area11);
-  printf("PIB em R$: %f \n", pib11);
-  printf("Numero de Pontos Turisticos: %d \n", pontos11);
-  printf("Densidade populacional: %f \n", densidade11);
-  printf("PIB per capita em R$: %f \n\n\n", ppc11);
-
-  
-  printf("Tecle algo e pressione ENTER para continuar...");
-  scanf("%s", &tecla);
-  system("clear"); 
-  
-
+  printf("Informe a unidade da federacao B: \n");
+  scanf("%s", &estado2);
   printf("Informe a cidade da carta 2 / estado B: \n");
   scanf("%s", &cidade21);
   printf("Informe a populacao da carta 2 / estado B: \n");
@@ -65,6 +49,24 @@ int main() {
   ppc21 = pib21/populacao21;
 
 
+  // Área para exibição dos dados da cidade
+
+  printf("   \n\n\n");
+
+  printf("################################## \n");
+  printf("### Os dados da carta A01 são: ### \n");
+  printf("################################## \n");
+  printf("Estado: %s \n", estado1);
+  printf("Cidade: %s \n", cidade11);
+  printf("Populacao: %f \n", populacao11);
+  printf("Area: %f \n", area11);
+  printf("PIB em R$: %f \n", pib11);
+  printf("Numero de Pontos Turisticos: %d \n", pontos11);
+  printf("Densidade populacional: %f \n", densidade11);
+  printf("PIB per capita em R$: %f \n\n\n", ppc11);
+
+  printf("   \n\n\n");
+
   printf("################################## \n");
   printf("### Os dados da carta B02 são: ### \n");
   printf("################################## \n");
@@ -76,10 +78,6 @@ int main() {
   printf("Numero de Pontos Turisticos: %d \n", pontos21);
   printf("Densidade populacional: %f \n", densidade21);
   printf("PIB per capita em R$: %f \n\n\n", ppc21);
-
-  printf("Tecle algo e pressione ENTER para finalizar...");
-  scanf("%s", &tecla);
-  system("clear"); 
 
 return 0;
 } 
