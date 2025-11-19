@@ -8,10 +8,12 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   
   char estado1[2],estado2[2];
-  char cidade11[30],cidade21[30],tecla;
+  char cidade11[30],cidade21[30];
   float populacao11,populacao21;
-  int pontos11,pontos21,segue;
+  int pontos11,pontos21;
   float area11,area21,pib11,pib21;
+  float densidade11,densidade21;
+  int atributo;
   
   // Recebendo informações da carta 1
 
@@ -76,5 +78,57 @@ int main() {
   printf("PIB em R$: %f \n", pib21);
   printf("Numero de Pontos Turisticos: %d \n", pontos21);
 
+  printf("   \n\n\n");
+
+  // Selecionando atributo a ser comparado
+
+  printf("############################################################# \n");
+  printf("### Selecione o atributo a ser comparado entre as cartas: ### \n");
+  printf("############################################################# \n\n");
+  printf("1 - Populacao \n");
+  printf("2 - Area \n");
+  printf("3 - PIB \n");
+  printf("4 - Numero de Pontos Turisticos \n");
+  printf("5 - Densidade Populacional \n");
+  printf("6 - PIB Per Capita \n");
+  scanf("%d", &atributo);
+
+  printf("   \n\n\n");
+
+  // Verifica qual atributo foi informado para efetuar a comparacao correspondente
+
+  if (atributo < 0 || atributo > 6)
+  {
+     printf("Voce infomou uma opcao de atributo invalida !!! Deve ser digitada uma opcao de 1 a 6. \n");   
+  }
+  else 
+  {
+    if (atributo = 1)
+    {
+        printf("********************************************************************************* \n");
+        printf("Atributo selecionado foi População \n");
+        printf("Carta A01 - %s / População: %f \n",cidade11,populacao11);
+        printf("Carta B01 - %s / População: %f \n",cidade21,populacao21);
+        if (populacao11 > populacao21)
+        {
+           printf("A carta A01 venceu !!! \n");
+           printf("****************************************************************************** \n");
+        }
+        else if (populacao11 < populacao21)
+        {
+           printf("A carta B01 venceu !!! \n");
+           printf("****************************************************************************** \n");
+        }
+        else (populacao11 = populacao21)
+        {
+           printf("As cartas A01 e B01 empataram !!! \n");
+           printf("****************************************************************************** \n");  
+        }
+    }
+  
+  }
+   
+
 return 0;
-} 
+
+}
