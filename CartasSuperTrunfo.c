@@ -105,7 +105,7 @@ int main() {
   {
     if (atributo == 1)
     {
-        printf("Atributo selecionado: População. \n");
+        printf("Atributo selecionado: População \n");
         printf("Carta A01 - %s",cidade11);
         printf(" / População: %f \n",populacao11);
         printf("Carta B01 - %s",cidade21);
@@ -114,7 +114,7 @@ int main() {
         {
            printf("A carta A01 venceu !!! \n");
         }
-        else (populacao11 < populacao21)
+        if (populacao11 < populacao21)
         {
            printf("A carta B01 venceu !!! \n");
         }
