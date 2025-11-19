@@ -13,6 +13,7 @@ int main() {
   int pontos11,pontos21;
   float area11,area21,pib11,pib21;
   float densidade11,densidade21;
+  float pibpc11,pibpc21;
   int atributo;
   
   // Recebendo informações da carta 1
@@ -47,6 +48,14 @@ int main() {
   printf("Informe a quantidade de pontos turísticos da carta 2 / estado B: \n");
   scanf("%d", &pontos21);
 
+  // Calcula Desnsidade Populacional
+  densidade11 == (populacao11 / area11);
+  densidade21 == (populacao21 / area21);
+
+  // Calcula PIB per Capita
+  pibpc11 == (pib11 / populacao11);
+  pibpc21 == (pib21 / populacao21);
+
 
   // Área para exibição dos dados da cidade
 
@@ -78,7 +87,7 @@ int main() {
   // printf("PIB em R$: %f \n", pib21);
   // printf("Numero de Pontos Turisticos: %d \n", pontos21);
 
-  printf("   \n\n\n");
+  printf("   \n\n");
 
   // Selecionando atributo a ser comparado
 
@@ -93,7 +102,7 @@ int main() {
   printf("6 - PIB Per Capita \n");
   scanf("%d", &atributo);
 
-  printf("   \n\n\n");
+  printf("   \n\n");
 
   // Verifica qual atributo foi informado para efetuar a comparacao correspondente
 
@@ -115,6 +124,91 @@ int main() {
            printf("A carta A01 venceu !!! \n");
         }
         if (populacao11 < populacao21)
+        {
+           printf("A carta B01 venceu !!! \n");
+        }
+    }
+
+    if (atributo == 2)
+    {
+        printf("Atributo selecionado: Área \n");
+        printf("Carta A01 - %s",cidade11);
+        printf(" / Área em Km2: %f \n",area11);
+        printf("Carta B01 - %s",cidade21);
+        printf(" / Área em Km2: %f \n",area21);
+        if (area11 > area21)
+        {
+           printf("A carta A01 venceu !!! \n");
+        }
+        if (area11 < area21)
+        {
+           printf("A carta B01 venceu !!! \n");
+        }
+    }
+
+    if (atributo == 3)
+    {
+        printf("Atributo selecionado: PIB \n");
+        printf("Carta A01 - %s",cidade11);
+        printf(" / PIB em R$: %f \n",pib11);
+        printf("Carta B01 - %s",cidade21);
+        printf(" / PIB em R$: %f \n",pib21);
+        if (pib11 > pib21)
+        {
+           printf("A carta A01 venceu !!! \n");
+        }
+        if (pib11 < pib21)
+        {
+           printf("A carta B01 venceu !!! \n");
+        }
+    }
+
+    if (atributo == 4)
+    {
+        printf("Atributo selecionado: Número de Pontos Turísticos \n");
+        printf("Carta A01 - %s",cidade11);
+        printf(" / Pontos Turísticos: %f \n",pontos11);
+        printf("Carta B01 - %s",cidade21);
+        printf(" / Pontos Turísticos: %f \n",pontos21);
+        if (pontos11 > pontos21)
+        {
+           printf("A carta A01 venceu !!! \n");
+        }
+        if (pontos11 < pontos21)
+        {
+           printf("A carta B01 venceu !!! \n");
+        }
+    }
+
+    if (atributo == 5)
+    {
+        printf("Atributo selecionado: Densidade Populacional \n");
+        printf("Carta A01 - %s",cidade11);
+        printf(" / Habitantes por Km2: %f \n",densidade11);
+        printf("Carta B01 - %s",cidade21);
+        printf(" / Habitantes por Km2: %f \n",densidade21);
+        if (densidade11 > densidade21)
+        {
+           printf("A carta B01 venceu !!! \n");
+        }
+        if (densidade11 < densidade21)
+        {
+           printf("A carta A01 venceu !!! \n");
+        }
+    }
+
+    if (atributo == 6)
+    {
+        printf("Atributo selecionado: PIB per Capita \n");
+        printf("Carta A01 - %s",cidade11);
+        printf(" / PIB per Capita em R$: %f \n",pibpc11);
+        printf("Carta B01 - %s",cidade21);
+        printf(" / PIB  per Capita em R$: %f \n",pibpc21);
+        if (pibpc11 > pibpc21)
+        {
+           printf("A carta A01 venceu !!! \n");
+        }
+        if (pibpc11 < pibpc21)
         {
            printf("A carta B01 venceu !!! \n");
         }
