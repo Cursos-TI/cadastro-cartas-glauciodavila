@@ -50,33 +50,33 @@ int main() {
 
   // Área para exibição dos dados da cidade
 
-  printf("   \n\n\n");
+  // printf("   \n\n\n");
 
   // Mostrando informações da carta 1
 
-  printf("################################## \n");
-  printf("### Os dados da carta A01 são: ### \n");
-  printf("################################## \n");
-  printf("Estado: %s \n", estado1);
-  printf("Cidade: %s \n", cidade11);
-  printf("Populacao: %f \n", populacao11);
-  printf("Area: %f \n", area11);
-  printf("PIB em R$: %f \n", pib11);
-  printf("Numero de Pontos Turisticos: %d \n", pontos11);
+  // printf("################################## \n");
+  // printf("### Os dados da carta A01 são: ### \n");
+  // printf("################################## \n");
+  // printf("Estado: %s \n", estado1);
+  // printf("Cidade: %s \n", cidade11);
+  // printf("Populacao: %f \n", populacao11);
+  // printf("Area: %f \n", area11);
+  // printf("PIB em R$: %f \n", pib11);
+  // printf("Numero de Pontos Turisticos: %d \n", pontos11);
 
-  printf("   \n\n\n");
+  // printf("   \n\n\n");
 
   // Mostrando informações da carta 2
 
-  printf("################################## \n");
-  printf("### Os dados da carta B02 são: ### \n");
-  printf("################################## \n");
-  printf("Estado: %s \n", estado2);
-  printf("Cidade: %s \n", cidade21);
-  printf("Populacao: %f \n", populacao21);
-  printf("Area: %f \n", area21);
-  printf("PIB em R$: %f \n", pib21);
-  printf("Numero de Pontos Turisticos: %d \n", pontos21);
+  // printf("################################## \n");
+  // printf("### Os dados da carta B02 são: ### \n");
+  // printf("################################## \n");
+  // printf("Estado: %s \n", estado2);
+  // printf("Cidade: %s \n", cidade21);
+  // printf("Populacao: %f \n", populacao21);
+  // printf("Area: %f \n", area21);
+  // printf("PIB em R$: %f \n", pib21);
+  // printf("Numero de Pontos Turisticos: %d \n", pontos21);
 
   printf("   \n\n\n");
 
@@ -105,25 +105,23 @@ int main() {
   {
     if (atributo = 1)
     {
-        printf("********************************************************************************* \n");
-        printf("Atributo selecionado foi População \n");
-        printf("Carta A01 - %s / População: %f \n",cidade11,populacao11);
-        printf("Carta B01 - %s / População: %f \n",cidade21,populacao21);
+        printf("Atributo selecionado: População. \n");
+        printf("Carta A01 - %s",cidade11);
+        printf(" / População: %f \n",populacao11);
+        printf("Carta B01 - %s",cidade21);
+        printf(" / População: %f \n",populacao21);
         if (populacao11 > populacao21)
         {
            printf("A carta A01 venceu !!! \n");
-           printf("****************************************************************************** \n");
         }
-        else if (populacao11 < populacao21)
+        else (populacao11 < populacao21)
         {
            printf("A carta B01 venceu !!! \n");
-           printf("****************************************************************************** \n");
         }
-        else (populacao11 = populacao21)
-        {
-           printf("As cartas A01 e B01 empataram !!! \n");
-           printf("****************************************************************************** \n");  
-        }
+        // else (populacao11 == populacao21)
+        // {
+        //    printf("As cartas A01 e B01 empataram !!! \n");
+        // }
     }
   
   }
