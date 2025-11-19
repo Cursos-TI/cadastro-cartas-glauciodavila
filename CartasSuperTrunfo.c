@@ -103,7 +103,7 @@ int main() {
   }
   else 
   {
-    if (atributo = 1)
+    if (atributo == 1)
     {
         printf("Atributo selecionado: População. \n");
         printf("Carta A01 - %s",cidade11);
@@ -118,10 +118,6 @@ int main() {
         {
            printf("A carta B01 venceu !!! \n");
         }
-        // else (populacao11 == populacao21)
-        // {
-        //    printf("As cartas A01 e B01 empataram !!! \n");
-        // }
     }
   
   }
