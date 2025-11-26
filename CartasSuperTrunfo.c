@@ -49,12 +49,12 @@ int main() {
   scanf("%d", &pontos21);
 
   // Calcula Desnsidade Populacional
-  densidade11 == (populacao11 / area11);
-  densidade21 == (populacao21 / area21);
+  densidade11 = (populacao11 / area11);
+  densidade21 = (populacao21 / area21);
 
   // Calcula PIB per Capita
-  pibpc11 == (pib11 / populacao11);
-  pibpc21 == (pib21 / populacao21);
+  pibpc11 = (pib11 / populacao11);
+  pibpc21 = (pib21 / populacao21);
 
 
   // Área para exibição dos dados da cidade
