@@ -106,48 +106,49 @@ int main() {
 
   // Verifica qual atributo foi informado para efetuar a comparacao correspondente
 
-  if (atributo < 0 || atributo > 6)
+  switch (atributo)
   {
-     printf("Voce infomou uma opcao de atributo invalida !!! Deve ser digitada uma opcao de 1 a 6. \n");   
-  }
-  else 
-  {
-    if (atributo == 1)
-    {
-        printf("Atributo selecionado: População \n");
-        printf("Carta A01 - %s",cidade11);
-        printf(" / População: %f \n",populacao11);
-        printf("Carta B01 - %s",cidade21);
-        printf(" / População: %f \n",populacao21);
-        if (populacao11 > populacao21)
-        {
-           printf("A carta A01 venceu !!! \n");
-        }
-        if (populacao11 < populacao21)
-        {
-           printf("A carta B01 venceu !!! \n");
-        }
-    }
+  case 1:
+     printf("Atributo selecionado: População \n");
+     printf("Carta A01 - %s",cidade11);
+     printf(" / População: %f \n",populacao11);
+     printf("Carta B01 - %s",cidade21);
+     printf(" / População: %f \n",populacao21);
+     if (populacao11 > populacao21)
+     {
+        printf("A carta A01 venceu !!! \n");
+     }
+     else if (populacao11 < populacao21)
+     {
+        printf("A carta B01 venceu !!! \n");
+     }
+     else
+     {
+        printf("As cartas A01 e B01 empataram !!! \n"); 
+     }
+  break;
 
-    if (atributo == 2)
-    {
-        printf("Atributo selecionado: Área \n");
-        printf("Carta A01 - %s",cidade11);
-        printf(" / Área em Km2: %f \n",area11);
-        printf("Carta B01 - %s",cidade21);
-        printf(" / Área em Km2: %f \n",area21);
-        if (area11 > area21)
-        {
-           printf("A carta A01 venceu !!! \n");
-        }
-        if (area11 < area21)
-        {
-           printf("A carta B01 venceu !!! \n");
-        }
-    }
-
-    if (atributo == 3)
-    {
+  case 2:
+     printf("Atributo selecionado: Área \n");
+     printf("Carta A01 - %s",cidade11);
+     printf(" / Área em Km2: %f \n",area11);
+     printf("Carta B01 - %s",cidade21);
+     printf(" / Área em Km2: %f \n",area21);
+     if (area11 > area21)
+     {
+        printf("A carta A01 venceu !!! \n");
+     }
+     else if (area11 < area21)
+     {
+        printf("A carta B01 venceu !!! \n");
+     }  
+     else 
+     {
+        printf("As cartas A01 e B01 empataram !!! \n"); 
+     }
+  break;
+     
+  case 3:
         printf("Atributo selecionado: PIB \n");
         printf("Carta A01 - %s",cidade11);
         printf(" / PIB em R$: %f \n",pib11);
@@ -157,66 +158,83 @@ int main() {
         {
            printf("A carta A01 venceu !!! \n");
         }
-        if (pib11 < pib21)
+        else if (pib11 < pib21)
         {
            printf("A carta B01 venceu !!! \n");
         }
-    }
+        else 
+        {
+           printf("As cartas A01 e B01 empataram !!! \n"); 
+        }
+  break;
 
-    if (atributo == 4)
-    {
-        printf("Atributo selecionado: Número de Pontos Turísticos \n");
-        printf("Carta A01 - %s",cidade11);
-        printf(" / Pontos Turísticos: %f \n",pontos11);
-        printf("Carta B01 - %s",cidade21);
-        printf(" / Pontos Turísticos: %f \n",pontos21);
-        if (pontos11 > pontos21)
-        {
-           printf("A carta A01 venceu !!! \n");
-        }
-        if (pontos11 < pontos21)
-        {
-           printf("A carta B01 venceu !!! \n");
-        }
-    }
+  case 4:
+     printf("Atributo selecionado: Número de Pontos Turísticos \n");
+     printf("Carta A01 - %s",cidade11);
+     printf(" / Pontos Turísticos: %f \n",pontos11);
+     printf("Carta B01 - %s",cidade21);
+     printf(" / Pontos Turísticos: %f \n",pontos21);
+     if (pontos11 > pontos21)
+     {
+        printf("A carta A01 venceu !!! \n");
+     }
+     else if (pontos11 < pontos21)
+     {
+        printf("A carta B01 venceu !!! \n");
+     }  
+     else 
+     {
+        printf("As cartas A01 e B01 empataram !!! \n"); 
+     } 
+  break;
 
-    if (atributo == 5)
-    {
-        printf("Atributo selecionado: Densidade Populacional \n");
-        printf("Carta A01 - %s",cidade11);
-        printf(" / Habitantes por Km2: %f \n",densidade11);
-        printf("Carta B01 - %s",cidade21);
-        printf(" / Habitantes por Km2: %f \n",densidade21);
-        if (densidade11 > densidade21)
-        {
-           printf("A carta B01 venceu !!! \n");
-        }
-        if (densidade11 < densidade21)
-        {
-           printf("A carta A01 venceu !!! \n");
-        }
-    }
-
-    if (atributo == 6)
-    {
-        printf("Atributo selecionado: PIB per Capita \n");
-        printf("Carta A01 - %s",cidade11);
-        printf(" / PIB per Capita em R$: %f \n",pibpc11);
-        printf("Carta B01 - %s",cidade21);
-        printf(" / PIB  per Capita em R$: %f \n",pibpc21);
-        if (pibpc11 > pibpc21)
-        {
-           printf("A carta A01 venceu !!! \n");
-        }
-        if (pibpc11 < pibpc21)
-        {
-           printf("A carta B01 venceu !!! \n");
-        }
-    }
+  case 5:
+     printf("Atributo selecionado: Densidade Populacional \n");
+     printf("Carta A01 - %s",cidade11);
+     printf(" / Habitantes por Km2: %f \n",densidade11);
+     printf("Carta B01 - %s",cidade21);
+     printf(" / Habitantes por Km2: %f \n",densidade21);
+     if (densidade11 > densidade21)
+     {
+        printf("A carta B01 venceu !!! \n");
+     }
+     else if (densidade11 < densidade21)
+     {
+        printf("A carta A01 venceu !!! \n");
+     }  
+     else 
+     {
+        printf("As cartas A01 e B01 empataram !!! \n"); 
+     }
+  break;
   
+  case 6:
+     printf("Atributo selecionado: PIB per Capita \n");
+     printf("Carta A01 - %s",cidade11);
+     printf(" / PIB per Capita em R$: %f \n",pibpc11);
+     printf("Carta B01 - %s",cidade21);
+     printf(" / PIB  per Capita em R$: %f \n",pibpc21);
+     if (pibpc11 > pibpc21)
+     {
+        printf("A carta A01 venceu !!! \n");
+     }
+     else if (pibpc11 < pibpc21)
+     {
+        printf("A carta B01 venceu !!! \n");
+     } 
+     else 
+     {
+        printf("As cartas A01 e B01 empataram !!! \n"); 
+     } 
+  break;
+  
+  default:
+     printf("Opção Inválida !!! \n");
   }
+    
+     return 0;
+}
    
 
-return 0;
 
-}
+
